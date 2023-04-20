@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>STICKY NOTE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="heading">
+      <h1>STICK-IT NOTES</h1>
+      <p id="owner_p">By Kosiara</p>
+    </div>
+
+    <div id="form">
+      <form id="inputForm">
+        <input
+          required
+          placeholder="Title"
+          type="text"
+          id="note_title"
+          name="note_title"
+          class="textInput"
+        />
+        <br />
+
+        <input
+          class="textInput"
+          required
+          placeholder="Content"
+          type="text"
+          id="note_content"
+          name="note_content"
+        />
+      </form>
+    </div>
+    <button id="btn" class="btn" type="submit">Create Note</button>
+
+    <h3 class="no-notes" id="no-notes">No notes</h3>
+    <ul id="notes"></ul>
+  </body>
+  <script src="data.js"></script>
+</html>
